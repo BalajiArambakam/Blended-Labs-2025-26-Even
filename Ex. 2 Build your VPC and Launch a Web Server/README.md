@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Balaji Arambakam
+* **Register Number**: 212224230021
+* **Date of Submission**: 17.8.26
 
 ---
 
@@ -87,31 +87,42 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 (Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. A Virtual Private Cloud (VPC) was designed and created with the CIDR block 10.0.0.0/16 to establish a secure and isolated network
+environment within AWS.
 
----
+2. A public subnet was configured within the VPC with the CIDR range 10.0.1.0/24, and auto-assign public IPv4 addresses was enabled to allow
+internet connectivity for instances.
+
+3. An Internet Gateway was created and attached to the VPC, followed by the setup of a route table with a default route (0.0.0.0/0) pointing to
+the gateway, and the route table was associated with the public subnet.
+
+4. A security group was established to permit inbound SSH (port 22) and HTTP (port 80) traffic, and an EC2 instance was launched using the
+Amazon Linux 2 AMI, associated with the security group and a key pair.
+
+5. The Apache HTTPD web server was installed and started on the EC2 instance, a simple HTML webpage was created, and its accessibility was
+verified through the public IP address of the instance via a web browser
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: VPC and Subnet Details
 
-(Insert Screenshot Here)
+<img width="1919" height="986" alt="Screenshot 2026-02-23 200748" src="https://github.com/user-attachments/assets/78d82640-613b-4b5e-bc36-8053d4656f16" />
+
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+<img width="1915" height="981" alt="Screenshot 2026-02-24 141539" src="https://github.com/user-attachments/assets/5ceb74a6-2849-413e-a458-0594d7a1058b" />
+
+
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-(Insert Screenshot Here)
+<img width="1914" height="991" alt="Screenshot 2026-02-24 142108" src="https://github.com/user-attachments/assets/e15d3da0-663b-4150-b12b-96ec6f6e3b99" />
+
 
 ---
 
