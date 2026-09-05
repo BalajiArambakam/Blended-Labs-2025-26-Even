@@ -3,7 +3,12 @@
 ## Title
 
 Scale and Load Balance Your Architecture
-Author : your name   Reg no : yours   Date :
+
+Author : Balaji Arambakam
+
+Reg no : 212224230021
+
+Date : 05-09-2026
 
 ---
 
@@ -66,14 +71,31 @@ Students test the setup by generating traffic and observing automatic scaling an
 
 ## Workflow (To be filled by Student)
 
-Describe step-by-step how you performed this experiment in your own words.
+1.Launched a new EC2 instance named Web Server in the N. Virginia region using Amazon Linux 2023 AMI and t2.micro instance type.
 
----
+2.Enabled termination protection and stop protection, configured a security group, and added a user data script to install and start an Apache web server.
+
+3.Monitored the instance using status checks, CloudWatch metrics, and system logs to ensure it was running properly.
+
+4.Modified the security group to allow HTTP (port 80) traffic and accessed the web server using the public IP address.
+
+5.Resized the instance to t2.small, increased the EBS volume size, explored EC2 service quotas, tested stop protection, and finally stopped the instance.
 
 ## Output Screenshots 
 
+<img width="1293" height="647" alt="image" src="https://github.com/user-attachments/assets/b635737a-0a42-452c-8deb-ce996cc7dce7" />
 
----
+<img width="1272" height="642" alt="image" src="https://github.com/user-attachments/assets/7e3e1f1f-b46d-4bdd-a906-17f40c2b11ee" />
+
+<img width="1266" height="637" alt="image" src="https://github.com/user-attachments/assets/25e69fa6-623d-482b-9bcf-a1741ca5250c" />
+
+<img width="1272" height="638" alt="image" src="https://github.com/user-attachments/assets/96453dc5-9899-4fe6-82cf-886110226424" />
+
+<img width="1290" height="690" alt="image" src="https://github.com/user-attachments/assets/d8fc9d20-df4c-490b-854d-ad98839f1524" />
+
+
+
+
 
 
 ## Result
